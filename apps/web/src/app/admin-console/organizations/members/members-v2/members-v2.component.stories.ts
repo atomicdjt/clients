@@ -14,7 +14,6 @@ import { UserNamePipe } from "@bitwarden/angular/pipes/user-name.pipe";
 import { LogoutService } from "@bitwarden/auth/common";
 import { OrganizationService } from "@bitwarden/common/admin-console/abstractions/organization/organization.service.abstraction";
 import { PolicyService } from "@bitwarden/common/admin-console/abstractions/policy/policy.service.abstraction";
-import { ProviderService } from "@bitwarden/common/admin-console/abstractions/provider.service";
 import {
   OrganizationUserStatusType,
   OrganizationUserType,
@@ -27,6 +26,7 @@ import { VaultTimeoutSettingsService } from "@bitwarden/common/key-management/va
 import { ConfigService } from "@bitwarden/common/platform/abstractions/config/config.service";
 import { PlatformUtilsService } from "@bitwarden/common/platform/abstractions/platform-utils.service";
 import { SyncService } from "@bitwarden/common/platform/sync";
+import { ProviderService } from "@bitwarden/common/provider/abstractions/provider.service";
 import { Guid, OrganizationId, UserId } from "@bitwarden/common/types/guid";
 import { LayoutComponent, StorybookGlobalStateProvider } from "@bitwarden/components";
 import { GlobalStateProvider } from "@bitwarden/state";
