@@ -3134,6 +3134,18 @@
   "exportSuccessSkippedAttachment": {
     "message": "1 corrupted attachment was skipped during export. All other vault data and attachments exported successfully."
   },
+  "exportExcludedGatedItem": {
+    "message": "1 item was not included in this export. It is protected by a privileged access rule, so its credentials are not available on this device."
+  },
+  "exportExcludedGatedItems": {
+    "message": "$COUNT$ items were not included in this export. They are protected by privileged access rules, so their credentials are not available on this device.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
   "exportSuccessSkippedAttachments": {
     "message": "$COUNT$ corrupted attachments were skipped during export. All other vault data and attachments exported successfully.",
     "placeholders": {
@@ -18314,6 +18326,9 @@
   "pamStatusUnknown": {
     "message": "Unknown"
   },
+  "pamSharedFolderPrivilegedControls": {
+    "message": "Privileged controls: access requires a request"
+  },
   "pamAccessBadgePrivileged": {
     "message": "Privileged"
   },
@@ -18346,6 +18361,10 @@
   },
   "pamAccessBadgeEnded": {
     "message": "Session ended"
+  },
+  "pamControlledAccessFilterActive": {
+    "message": "Active",
+    "description": "Controlled access filter option in the vault table: items with an active access session."
   },
   "pamAuditKindAccessEndedByRequester": {
     "message": "Access ended by requester"
@@ -18792,6 +18811,12 @@
       }
     }
   },
+  "pamCollectionAccessRuleCalloutTitle": {
+    "message": "Access rule"
+  },
+  "pamCollectionAccessRuleCalloutBody": {
+    "message": "Access to items here is controlled by"
+  },
   "pamInboxElapsedHours": {
     "message": "$HOURS$h ago",
     "placeholders": {
@@ -18815,6 +18840,18 @@
   },
   "pamAccessRules": {
     "message": "Access rules"
+  },
+  "pamCollectionRequiresRequest": {
+    "message": "Items in this collection require a request.",
+    "description": "Names the restriction on a collection governed by an access rule. Shared verbatim by the lock indicator in the vault's Filters sidebar and the banner shown when the collection is opened; the two must always say the same thing."
+  },
+  "pamGatedCollectionBannerName": {
+    "message": "Privileged access",
+    "description": "Screen-reader name for the notice shown above the item list while a collection governed by an access rule is the active filter. A short landmark label, not the notice's own sentence, which is announced separately as the notice's content."
+  },
+  "pamNoAccessRule": {
+    "message": "No access rule",
+    "description": "Screen-reader text for a vault row in the Controlled access column that no access rule governs."
   },
   "pamAccessRuleActive": {
     "message": "Active"
